@@ -72,9 +72,9 @@
     };
 
     behaviors {
-        slsk_u: slsk_u {
+        letter_u_sk: letter_u_sk {
             compatible = "zmk,behavior-hold-tap";
-            label = "SLSK_U";
+            label = "LETTER_U_SK";
             bindings = <&sk>, <&letter_u>;
 
             #binding-cells = <2>;
@@ -82,10 +82,10 @@
             tapping-term-ms = <200>;
         };
 
-        slmo: slmo {
+        letter_a_mo: letter_a_mo {
             compatible = "zmk,behavior-hold-tap";
-            label = "SLMO";
-            bindings = <&mo>, <&sl>;
+            label = "LETTER_A_MO";
+            bindings = <&mo>, <&letter_a>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -115,7 +115,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kpsk LEFT_SHIFT P  &slsk_u LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &kp I  &kp E  &slmo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Y  &kp KP_DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Z  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
+&none  &kpsk LEFT_SHIFT P  &letter_u_sk LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &kp I  &kp E  &letter_a_mo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Y  &kp KP_DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Z  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
             >;
 
             label = "puq";
