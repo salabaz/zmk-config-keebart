@@ -131,7 +131,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans  &kp ESCAPE  &kp BACKSPACE  &kp UP_ARROW  &kp DELETE  &kp N0  &none  &none  &tog 1  &trans  &mo 2  &trans  &trans  &kp ENTER  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &none  &none  &trans  &trans  &rgb_ug RGB_TOG  &bootloader  &studio_unlock  &kp TAB  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &kp END  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans  &kp ESCAPE  &kp BACKSPACE  &kp UP  &kp DELETE  &kp N0  &none  &none  &tog 1  &trans  &mo 2  &trans  &trans  &kp ENTER  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &none  &none  &trans  &trans  &rgb_ug RGB_TOG  &bootloader  &studio_unlock  &kp TAB  &kp PAGE_UP  &kp PAGE_DOWN  &kp HOME  &kp END  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "nav1";
@@ -149,7 +149,7 @@
         UE {
             display-name = "EXTRA 1";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &umlaut_ue  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "ue";
@@ -165,7 +165,7 @@
         AE {
             display-name = "EXTRA 3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &umlaut_ae  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "ae";
@@ -174,7 +174,7 @@
         SS {
             display-name = "EXTRA 4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &umlaut_ss  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "ss";
