@@ -78,8 +78,8 @@
             bindings = <&sk>, <&letter_u>;
 
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <230>;
         };
 
         letter_a_mo: letter_a_mo {
@@ -89,7 +89,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <230>;
         };
 
         kpsk: kpsk {
@@ -98,7 +98,17 @@
             bindings = <&sk>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <230>;
+            flavor = "tap-preferred";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <36 41>;
         };
     };
 
@@ -115,7 +125,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kpsk LEFT_SHIFT P  &letter_u_sk LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &lt 8 I  &lt 7 E  &letter_a_mo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Z  &kp KP_DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Y  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
+&none  &kpsk LEFT_SHIFT P  &letter_u_sk LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &lt 8 I  &lt 7 E  &letter_a_mo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Z  &kp DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Y  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
             >;
 
             label = "puq";
