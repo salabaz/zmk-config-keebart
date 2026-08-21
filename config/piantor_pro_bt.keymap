@@ -91,6 +91,15 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
         };
+
+        kpsk: kpsk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KPSK";
+            bindings = <&sk>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -106,7 +115,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &mt LEFT_SHIFT P  &slsk_u LEFT_ALT 0  &none  &mt LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kp C  &kp L  &kp M  &kp B  &none  &none  &kp H  &kp I  &kp E  &slmo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Y  &kp KP_DOT  &kp APOSTROPHE  &kp X  &kp J  &kp G  &kp Z  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
+&none  &kpsk LEFT_SHIFT P  &slsk_u LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &kp I  &kp E  &slmo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Y  &kp KP_DOT  &kp APOSTROPHE  &kp X  &kp J  &kp G  &kp Z  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
             >;
 
             label = "puq";
