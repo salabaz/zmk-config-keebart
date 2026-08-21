@@ -38,7 +38,7 @@
         umlaut_ue: umlaut_ue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE &kp LEFT_BRACE>;
+            bindings = <&kp BACKSPACE &kp LEFT_BRACKET>;
             label = "UMLAUT_UE";
         };
 
@@ -115,7 +115,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kpsk LEFT_SHIFT P  &slsk_u LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &kp I  &kp E  &slmo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Y  &kp KP_DOT  &kp APOSTROPHE  &kp X  &kp J  &kp G  &kp Z  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
+&none  &kpsk LEFT_SHIFT P  &slsk_u LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &kp I  &kp E  &slmo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Y  &kp KP_DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Z  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
             >;
 
             label = "puq";
@@ -180,11 +180,13 @@
             label = "ss";
         };
 
-        extra_layer_6 {
+        NUM {
             display-name = "EXTRA 6";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans  &kp RIGHT_BRACE  &kp N7  &kp N8  &kp N9  &kp LS(N0)  &none  &none  &tog 7  &trans  &trans  &trans  &trans  &kp SLASH  &kp N4  &kp N5  &kp N6  &kp N0  &none  &none  &trans  &trans  &trans  &trans  &trans  &kp LS(RIGHT_BRACE)  &kp N1  &kp N2  &kp N3  &kp LS(N7)  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "num";
         };
     };
 };
