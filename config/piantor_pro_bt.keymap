@@ -125,7 +125,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kpsk LEFT_SHIFT P  &letter_u_sk LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &lt 8 I  &lt 7 E  &letter_a_mo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Z  &kp DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Y  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
+&none  &kpsk LEFT_SHIFT P  &letter_u_sk LEFT_GUI 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &lt 8 I  &lt 7 E  &letter_a_mo 1 5  &letter_o 4  &kp D  &kp T  &lt 9 R  &lt 10 N  &letter_s  &none  &none  &kp K  &kp Z  &kp DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Y  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
             >;
 
             label = "puq";
