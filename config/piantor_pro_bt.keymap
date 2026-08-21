@@ -15,11 +15,11 @@
 
 / {
     macros {
-        key_o: umlaut_o {
+        key_o: key_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp O &sl 4>;
-            label = "UMLAUT_O";
+            label = "KEY_O";
         };
 
         umlaut_o: umlaut_o {
