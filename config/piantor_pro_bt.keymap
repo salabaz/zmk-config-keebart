@@ -15,10 +15,17 @@
 
 / {
     macros {
-        umlaut_o: umlaut_o {
+        key_o: umlaut_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp O &sl 4>;
+            label = "UMLAUT_O";
+        };
+
+        umlaut_o: umlaut_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp LS(SEMI)>;
             label = "UMLAUT_O";
         };
     };
@@ -36,7 +43,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &mt LEFT_SHIFT P  &mt LEFT_ALT U  &to 3  &mt LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kp C  &kp L  &kp M  &kp B  &none  &none  &kp H  &kp I  &kp E  &kp A  &kp O  &kp D  &kp T  &kp R  &kp N  &kp S  &none  &none  &kp K  &kp Y  &kp DOT  &kp COMMA  &kp X  &kp J  &kp G  &kp Z  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
+&none  &mt LEFT_SHIFT P  &mt LEFT_ALT U  &to 3  &mt LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kp C  &kp L  &kp M  &kp B  &none  &none  &kp H  &kp I  &kp E  &kp A  &key_o  &kp D  &kp T  &kp R  &kp N  &kp S  &none  &none  &kp K  &kp Y  &kp DOT  &kp COMMA  &kp X  &kp J  &kp G  &kp Z  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
             >;
         };
 
@@ -78,7 +85,7 @@
         OE {
             display-name = "Umlaut oe";
             bindings = <
-&trans  &trans  &trans  &kp LS(SEMI)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &umlaut_o  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
