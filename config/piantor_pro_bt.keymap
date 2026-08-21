@@ -115,7 +115,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kpsk LEFT_SHIFT P  &letter_u_sk LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &kp I  &lt 7 E  &letter_a_mo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Z  &kp KP_DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Y  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
+&none  &kpsk LEFT_SHIFT P  &letter_u_sk LEFT_ALT 0  &kpsk LEFT_ALT C_REPEAT  &kpsk LEFT_CONTROL KP_COMMA  &kp Q  &kp V  &kpsk LCTRL C  &kpsk LEFT_ALT L  &kpsk LEFT_GUI M  &kpsk LEFT_SHIFT B  &none  &none  &kp H  &lt 8 I  &lt 7 E  &letter_a_mo 1 5  &letter_o  &kp D  &kp T  &kp R  &kp N  &letter_s  &none  &none  &kp K  &kp Z  &kp KP_DOT  &kp LS(BACKSLASH)  &kp X  &kp J  &kp G  &kp Y  &kp W  &kp F  &none  &sk LSHFT  &kp SPACE  &sk LCTRL  &sk LCTRL  &kp SPACE  &sk LSHFT
             >;
 
             label = "puq";
@@ -187,6 +187,30 @@
             >;
 
             label = "num";
+        };
+
+        FN {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F10  &kp F7  &kp F8  &kp F9  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F12  &kp F1  &kp F2  &kp F3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "fn";
+        };
+
+        SYM1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LESS_THAN  &kp RA(N7)  &kp RA(N8)  &kp LPAR  &trans  &trans  &trans  &trans  &trans  &tog 9  &trans  &trans  &trans  &trans  &trans  &kp EXCL  &kp QUESTION  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "sym1";
+        };
+
+        SYM2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp GREATER_THAN  &kp RA(N0)  &kp RA(N9)  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "sym2";
         };
     };
 };
